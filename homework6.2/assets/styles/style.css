@@ -1,0 +1,215 @@
+/* Картинка макета, по которому сделала, называется originalpage.png- находится в assets/images/image */
+/* Шрифты и общие параметры */
+h1{
+    Font-weight:600;
+    Font-size:12px;
+}
+h2, .title{
+    font-size: 16px;
+    font-weight: bold;
+}
+h3{
+    font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+}
+figcaption{
+    font-size: 12px;
+}
+.header{
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main, footer{
+    font-family: "Nunito", sans-serif;
+    /* font-optical-sizing: auto; -убрала т.к.валидатор считает это ошибкой*/
+    font-style: normal;
+}
+li{
+    list-style-type: none;
+}
+/* Создаем grid-контейнер */
+body{
+    width: 100%;
+    display: grid;
+    grid-template-columns:311px 1fr;
+    grid-template-rows:81px 553px 338px;
+    gap: 5px;
+}
+/* Блок заголовка */
+.header{
+    grid-row:1/2;
+    grid-column:1/3;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    padding-left: 103px; 
+}
+#logotype{
+    width: 98px;
+    height: 31px;
+    padding-top: 25px;
+    grid-column:1/2;
+    grid-row:1/2;
+}
+
+/* Верхнее меню-навигация */
+.header_menu{
+    grid-column:2/3;
+    grid-row:1/2;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 16px;
+}
+/* Блок кнопок заголовка (справа) */
+.button{
+    grid-column:3/4;
+    grid-row:1/2;
+    padding-right: 103px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    justify-items: end;
+}
+.btn-1{
+    width:18px;
+    height: 17px; 
+} 
+.btn-2 {
+    width:19px;
+    height: 19px; 
+}
+.btn-3 {
+    width:15px;
+    height: 19px;
+}
+/* Главный блок */
+main{
+    grid-row: 2/3;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns:311px 1fr;
+    grid-template-rows: 553px 1fr;
+}
+/* Блок навигации слева */
+.leftmenu{
+    background-color: #151413;
+    color:#FFFDFC;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 1fr 134px 72.5px;
+}
+.nav-1{
+    width: 133px;
+    height: 42px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.nav-2, .nav-3 {
+    padding-left: 50px;
+    padding-top: 30px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.nav-4 {
+    padding-left: 50px;
+    padding-top: 30px;
+    width: 40%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+/* Основная часть*/
+.mainPart{
+    padding-top: 44px;
+    padding-left: 52px;
+    padding-right: 103px;
+    display: flex;
+    flex-direction: column;
+}
+/* Осн.часть надпись на баннере */
+.image-container{
+    position: relative;
+}
+#banner {
+    width: 900px;
+    height: 365px;
+    padding-top: 20px;
+}
+.text-overlay{
+    position: absolute;
+    bottom: 120px;
+    left: 256px;
+    line-height: 150%;
+}
+p{
+    background-color: #DC5B34;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+}
+/* Подвал */
+footer{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-rows: 291.5px 46.5px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 330px repeat(4, 1fr);
+    justify-items: start;
+}
+/* Разделы wrapper */
+.footer-1 {
+    display: flex;   
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 103px;
+    padding-bottom: 100px;
+    justify-content: space-between;
+}
+.footericons{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+.footer-2, .footer-3 {
+    font-size: 16px;
+    line-height: normal;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 103px;
+}
+.footer-5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.down{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}  
+/* Псевдоклассы */
+li:hover{
+    transform: scale(1.1);
+}
+.topnav:active{
+    color:#DC5B34;
+    text-decoration: underline;
+}
