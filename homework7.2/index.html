@@ -6,7 +6,8 @@
     <!-- Подключение CSS -->
     <link rel="stylesheet" href="./assets/styles/reset.css">
     <link rel="stylesheet" href="./assets/styles/normalize.css">
-    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!-- <link rel="stylesheet" href="./assets/styles/style.css"> -->
+    <link rel="stylesheet" href="./assets/styles/style_adaptive.css">
     <!-- Sans шрифт -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +20,7 @@
 </head>
 <body>
     <header class="header">
-        <img src="./assets/images/icons/Logotype.png" alt="Логотип" id="logotype">
+        <img src="./assets/images/icons/Logotype.svg" alt="Логотип" id="logotype">
         <nav class="header_menu">
             <div class="topnav">Каталог</div>
             <div class="topnav">Для мужчин</div>
@@ -27,6 +28,16 @@
             <div class="topnav">Новинки</div>
             <div class="topnav">Распродажа</div>
         </nav>
+        <ul class="hidden_list"> 
+            <li class="title">Каталог
+            <ul class="catalog">
+                <li>Для мужчин</li>
+            <li>Для женщин</li>
+            <li>Новинки</li>
+            <li>Распродажа</li>   
+            </ul>
+            </li>     
+        </ul>
         <div class="button">
             <img src="assets/images/icons/heart.png" alt="Избранное" class="btn-1">
             <img src="assets/images/icons/cart.png" alt="Корзина" class="btn-2">
@@ -35,7 +46,7 @@
     </header>
     <main>
         <nav class="leftmenu">
-            <img src="./assets/images/icons/logotype_2.png" alt="Логотип бренда" class="nav-1">
+            <img src="./assets/images/icons/cosmoshop.svg" alt="Логотип бренда" class="nav-1">
             <ul class="nav-2">
                 <li>ОДЕЖДА</li>
                 <li>ОБУВЬ</li>
@@ -59,12 +70,7 @@
         <div class="mainPart">
             <h1>Главная > Oбувь > Спортивная обувь</h1>
             <div class="image-container">
-            <img src="./assets/images/image/photo.png" alt="Главный баннер" id="banner">
-            <div class="text-overlay">
-                <p>СКИДКА 20%</p><br>
-                <p>НА ВСЮ КОЛЛЕКЦИЮ</p><br>
-                <p>СПОРТИВНОЙ ОБУВИ</p>
-            </div>
+            <img src="./assets/images/image/banner.png" alt="Главный баннер" id="banner">
             </div>
         </div>
     </main>
@@ -79,7 +85,7 @@
             <img src="./assets/images/icons/instagram_color.png" alt="instagram">
             <img src="./assets/images/icons/facebook_color.png" alt="facebook">
             <img src="./assets/images/icons/twitter_color.png" alt="twitter">
-        </div>
+            </div>
         </div>
         <ul class="footer-2"> 
             <li class="title">О компании</li>
